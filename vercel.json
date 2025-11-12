@@ -1,8 +1,13 @@
 {
   "version": 2,
   "name": "dfw-smart-apartments-dashboard",
-  "builds": [{ "src": "package.json", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }],
-  "env": { "NODE_ENV": "production" },
-  "domains": ["dfwsmartapartments.com"]
+  "builds": [
+    { "src": "package.json", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }
