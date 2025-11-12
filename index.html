@@ -3,10 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DFW Smart Apartments Dashboard</title>
+  <title>DFW Smart Apartments — Dashboard</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
-<body style="margin:0; background-color:#0d0d0d; color:white; font-family:'Century Gothic', sans-serif;">
-  <div id="root"></div>
-  <script type="module" src="./src/MockDashboard.jsx"></script>
+<body>
+  <!-- Splash -->
+  <section id="splash" class="splash">
+    <div class="splash-inner">
+      <h1 class="logo-text" aria-label="DFW Smart Apartments">
+        <span class="logo-gradient">DFW Smart Apartments</span>
+      </h1>
+      <p class="tagline">Service is Happening</p>
+    </div>
+  </section>
+
+  <!-- Dashboard -->
+  <main id="dashboard" class="dashboard hidden">
+    <header class="dash-header">
+      <h2>Field Operations Overview</h2>
+    </header>
+
+    <section class="cards">
+      <div class="card kpi kpi-blue">
+        <div class="kpi-title">Active Takeoffs</div>
+        <div class="kpi-value">45</div>
+        <div class="kpi-sub">▲ 24% vs last week</div>
+      </div>
+
+      <div class="card kpi kpi-green">
+        <div class="kpi-title">Avg Turnaround Time</div>
+        <div class="kpi-value">3.6 hrs</div>
+        <div class="kpi-sub">Goal &lt; 4 hrs</div>
+      </div>
+
+      <div class="card kpi kpi-yellow">
+        <div class="kpi-title">Estimate Accuracy</div>
+        <div class="kpi-value">96.2%</div>
+        <div class="kpi-sub">Variance ±3%</div>
+      </div>
+
+      <div class="card chart">
+        <div class="card-title">Takeoff Submissions Over Time</div>
+        <div class="placeholder">[Looker Embed Placeholder]</div>
+      </div>
+
+      <div class="card chart">
+        <div class="card-title">Top 5 Trades by Volume</div>
+        <div class="placeholder">[Looker Embed Placeholder]</div>
+      </div>
+
+      <div class="card chart wide">
+        <div class="card-title">Budget vs Actual per Project</div>
+        <div class="placeholder">[Looker Embed Placeholder]</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./dashboard.js"></script>
 </body>
 </html>
