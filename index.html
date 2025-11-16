@@ -3,63 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DFW Smart Apartments — Dashboard</title>
-  <link rel="stylesheet" href="./style.css" />
+  <title>DFWSA – Smart Amenity System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #0f1525, #1d263b);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      margin-top: 65px;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(90deg,#4db8ff,#60f5d2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      margin-top: 15px;
+      font-size: 20px;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 60px auto;
+      padding: 30px;
+      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.06);
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.09);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 30px;
+      font-weight: 700;
+      background: linear-gradient(90deg,#60f5d2,#4db8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .features {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.7;
+      margin-top: 20px;
+      opacity: 0.9;
+    }
+
+    .footer {
+      margin-top: 70px;
+      opacity: 0.6;
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      font-size: 18px;
+      font-weight: 600;
+      background: #4db8ff;
+      color: #0f1525;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      background: #60f5d2;
+      transform: translateY(-3px);
+    }
+  </style>
+
 </head>
 <body>
-  <!-- Splash -->
-  <section id="splash" class="splash">
-    <div class="splash-inner">
-      <h1 class="logo-text" aria-label="DFW Smart Apartments">
-        <span class="logo-gradient">DFW Smart Apartments</span>
-      </h1>
-      <p class="tagline">Service is Happening</p>
+
+  <div class="logo">DFWSA</div>
+  <div class="subtitle">Smart Amenity System • Vendor Ecosystem • Resident Engagement</div>
+
+  <div class="container">
+    <h2>Our New Platform Is Under Construction</h2>
+    <div class="features">
+      • Vendor Bid Engine & Estimating Tools<br>
+      • Service Request Routing Across Trades<br>
+      • Resident Experience & Smart Amenities Hub<br>
+      • Investor & Asset Management Analytics<br>
+      • Community Engagement, Education & Events<br>
+      • Bilingual Vendor Onboarding (EN/ES)<br>
+      • FHIR-Ready, API-Friendly Modern Architecture
     </div>
-  </section>
 
-  <!-- Dashboard -->
-  <main id="dashboard" class="dashboard hidden">
-    <header class="dash-header">
-      <h2>Field Operations Overview</h2>
-    </header>
+    <a href="#" class="btn">Launching Soon</a>
+  </div>
 
-    <section class="cards">
-      <div class="card kpi kpi-blue">
-        <div class="kpi-title">Active Takeoffs</div>
-        <div class="kpi-value">45</div>
-        <div class="kpi-sub">▲ 24% vs last week</div>
-      </div>
+  <div class="footer">DFWSA © 2025 • Built for Multifamily Excellence</div>
 
-      <div class="card kpi kpi-green">
-        <div class="kpi-title">Avg Turnaround Time</div>
-        <div class="kpi-value">3.6 hrs</div>
-        <div class="kpi-sub">Goal &lt; 4 hrs</div>
-      </div>
-
-      <div class="card kpi kpi-yellow">
-        <div class="kpi-title">Estimate Accuracy</div>
-        <div class="kpi-value">96.2%</div>
-        <div class="kpi-sub">Variance ±3%</div>
-      </div>
-
-      <!-- Embed-ready Looker sections -->
-      <div class="card chart">
-        <div class="card-title">Takeoff Submissions Over Time</div>
-        <iframe class="looker-frame" src="YOUR_LOOKER_URL_HERE" allowfullscreen></iframe>
-      </div>
-
-      <div class="card chart">
-        <div class="card-title">Top 5 Trades by Volume</div>
-        <iframe class="looker-frame" src="YOUR_LOOKER_URL_HERE" allowfullscreen></iframe>
-      </div>
-
-      <div class="card chart wide">
-        <div class="card-title">Budget vs Actual per Project</div>
-        <iframe class="looker-frame" src="YOUR_LOOKER_URL_HERE" allowfullscreen></iframe>
-      </div>
-    </section>
-  </main>
-
-  <script src="./dashboard.js"></script>
 </body>
 </html>
