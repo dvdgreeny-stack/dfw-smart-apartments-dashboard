@@ -13,60 +13,59 @@
         }
         body { 
             font-family: 'Century Gothic', sans-serif; 
-            background: #f2f0ed; /* Clean Platinum/Beige Slate */
+            background: #f4f6f7; /* Deeper blue-grey slate background */
         }
         .platinum-card {
             background: #ffffff;
-            border: 1px solid rgba(197, 163, 103, 0.2);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(197, 163, 103, 0.25);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-between p-8 text-[#333]">
+<body class="min-h-screen flex flex-col items-center justify-between p-8 text-[#2c3e50]">
     
     <nav class="w-full flex justify-center py-6">
         <span class="text-[#c5a367] text-3xl tracking-[0.5em] font-light uppercase">DFWSA</span>
     </nav>
 
-    <div class="max-w-6xl w-full text-center flex-grow flex flex-col justify-center py-10">
+    <div class="max-w-6xl w-full text-center flex-grow flex flex-col justify-center py-8">
         
         <header class="mb-12">
             <p class="text-[#c5a367] tracking-[0.3em] uppercase text-[10px] font-bold mb-4">
                 Smart Amenity System • Vendor Ecosystem • Resident Engagement
             </p>
-            <div class="h-[1px] w-1/4 mx-auto bg-[#c5a367] opacity-30 mb-8"></div>
-            <h1 class="text-5xl md:text-6xl font-light text-[#222] tracking-tight">Service is Happening.</h1>
+            <div class="h-[1px] w-1/4 mx-auto bg-[#c5a367] opacity-40 mb-8"></div>
+            <h1 class="text-5xl md:text-6xl font-light text-[#1a1a1a] tracking-tight">Service is Happening.</h1>
         </header>
 
         <section class="grid md:grid-cols-3 gap-8 text-left">
-            <div class="platinum-card p-10 rounded-3xl transition-all hover:shadow-lg">
-                <h2 class="text-[#c5a367] text-md font-bold uppercase tracking-widest mb-4">1. Strategic Asset Refresh</h2>
-                <p class="text-sm leading-relaxed text-[#666]">Our proprietary <span class="font-bold italic text-[#222]">"Soft Bid"</span> flow automates the journey from inspection to restoration. We provide Asset Managers with a tactical engine for institutional ease of use.</p>
+            <div class="platinum-card p-10 rounded-[2rem] transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:border-[#c5a367]/60 group">
+                <h2 class="text-[#c5a367] text-md font-bold uppercase tracking-widest mb-4 group-hover:text-[#b08d4f]">1. Strategic Asset Refresh</h2>
+                <p class="text-sm leading-relaxed text-[#4a5568]">Our proprietary <span class="font-bold italic text-[#1a1a1a]">"Soft Bid"</span> flow automates the journey from inspection to restoration. We provide Asset Managers with a tactical engine for institutional ease of use.</p>
             </div>
 
-            <div class="platinum-card p-10 rounded-3xl transition-all hover:shadow-lg">
-                <h2 class="text-[#c5a367] text-md font-bold uppercase tracking-widest mb-4">2. Inclusive Communities</h2>
-                <p class="text-sm leading-relaxed text-[#666]"><span class="font-bold text-[#222]">Turning Strangers into Neighbors.</span> We build brand cheerleaders through a hybrid engagement model that transforms isolated renters into a loyal community.</p>
+            <div class="platinum-card p-10 rounded-[2rem] transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:border-[#c5a367]/60 group">
+                <h2 class="text-[#c5a367] text-md font-bold uppercase tracking-widest mb-4 group-hover:text-[#b08d4f]">2. Inclusive Communities</h2>
+                <p class="text-sm leading-relaxed text-[#4a5568]"><span class="font-bold text-[#1a1a1a]">Turning Strangers into Neighbors.</span> We build brand cheerleaders through a hybrid engagement model that transforms isolated renters into a loyal community.</p>
             </div>
 
-            <div class="platinum-card p-10 rounded-3xl transition-all hover:shadow-lg">
-                <h2 class="text-[#c5a367] text-md font-bold uppercase tracking-widest mb-4">3. Collective Impact</h2>
-                <p class="text-sm leading-relaxed text-[#666]"><span class="font-bold text-[#222]">Growth through Symbiosis.</span> Retention is rooted in respect. We unite residents and vendors for local service projects, defining the nurturing property standard.</p>
+            <div class="platinum-card p-10 rounded-[2rem] transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:border-[#c5a367]/60 group">
+                <h2 class="text-[#c5a367] text-md font-bold uppercase tracking-widest mb-4 group-hover:text-[#b08d4f]">3. Collective Impact</h2>
+                <p class="text-sm leading-relaxed text-[#4a5568]"><span class="font-bold text-[#1a1a1a]">Growth through Symbiosis.</span> Retention is rooted in respect. We unite residents and vendors for local service projects, defining the nurturing property standard.</p>
             </div>
         </section>
     </div>
 
-    <footer class="w-full flex flex-col items-center py-10">
-        <div class="text-[#999] text-[10px] tracking-[0.25em] uppercase mb-10 font-medium">
+    <footer class="w-full flex flex-col items-center py-8">
+        <div class="text-[#7f8c8d] text-[10px] tracking-[0.25em] uppercase mb-12 font-semibold">
             [Launching Soon] API-Friendly • Modern Architecture • Data-Secured
         </div>
         
-        <div class="relative w-16 h-16 opacity-80 flex items-center justify-center">
-             <img src="/favicon.ico" 
-                  alt="DFWSA Badge" 
-                  class="w-full h-auto drop-shadow-sm" 
-                  onerror="this.style.display='none'">
-             <span class="absolute text-[8px] text-[#c5a367] font-bold uppercase tracking-tighter">Powered By DFWSA</span>
+        <div class="flex flex-col items-center opacity-60 hover:opacity-100 transition-opacity cursor-default">
+             <div class="h-10 flex items-center">
+                 <span class="text-[9px] text-[#c5a367] font-bold uppercase tracking-[0.4em]">Powered By DFWSA</span>
+             </div>
+             <img src="/favicon.ico" alt="" class="mt-2 w-8 h-auto grayscale brightness-110" onerror="this.style.display='none'">
         </div>
     </footer>
 </body>
