@@ -14,8 +14,13 @@
         body { font-family: 'Century Gothic', sans-serif; }
     </style>
 </head>
-<body class="bg-[#0a0a0a] text-[#e5e5e5] min-h-screen flex items-center justify-center p-6">
-    <div class="max-w-6xl w-full text-center">
+<body class="bg-[#0a0a0a] text-[#e5e5e5] min-h-screen flex flex-col items-center justify-between p-8">
+    
+    <nav class="w-full flex justify-center py-4">
+        <span class="text-[#c5a367] text-2xl tracking-[0.5em] font-light">DFWSA</span>
+    </nav>
+
+    <div class="max-w-6xl w-full text-center flex-grow flex flex-col justify-center">
         
         <header class="mb-16">
             <p class="text-[#c5a367] tracking-[0.3em] uppercase text-xs font-bold mb-4">
@@ -26,26 +31,28 @@
         </header>
 
         <section class="grid md:grid-cols-3 gap-8 text-left">
-            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)]">
+            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)] hover:border-[#c5a367]/50 transition-all">
                 <h2 class="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4">1. Strategic Asset Refresh</h2>
-                <p class="text-sm leading-relaxed text-gray-400">Our proprietary <span class="text-white italic">"Soft Bid"</span> flow automates the journey from inspection to restoration. We provide Asset Managers with a seamless, tactical engine for make-readies, repairs, and renovations with institutional ease of use.</p>
+                <p class="text-sm leading-relaxed text-gray-400">Our proprietary <span class="text-white italic">"Soft Bid"</span> flow automates the journey from inspection to restoration. We provide Asset Managers with a seamless, tactical engine for institutional ease of use.</p>
             </div>
 
-            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)]">
+            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)] hover:border-[#c5a367]/50 transition-all">
                 <h2 class="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4">2. Inclusive Communities</h2>
-                <p class="text-sm leading-relaxed text-gray-400"><span class="text-white">Turning Strangers into Neighbors.</span> We build brand cheerleaders through a hybrid engagement model delivered virtually, in the clubhouse, or off-site. Connecting residents through sports, arts, and entertainment.</p>
+                <p class="text-sm leading-relaxed text-gray-400"><span class="text-white">Turning Strangers into Neighbors.</span> We build brand cheerleaders through a hybrid engagement model that transforms isolated renters into a loyal community.</p>
             </div>
 
-            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)]">
+            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)] hover:border-[#c5a367]/50 transition-all">
                 <h2 class="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4">3. Collective Impact</h2>
-                <p class="text-sm leading-relaxed text-gray-400"><span class="text-white">Growth through Symbiosis.</span> Retention is rooted in respect. When residents, vendors, and management unite for local service projects, it creates a symbiotic cycle of community awareness and growth.</p>
+                <p class="text-sm leading-relaxed text-gray-400"><span class="text-white">Growth through Symbiosis.</span> Retention is rooted in respect. We unite residents and vendors for local service projects, defining the nurturing property standard.</p>
             </div>
         </section>
-
-        <footer class="mt-24 opacity-30 text-[10px] tracking-[0.2em] uppercase">
-            [Launching Soon] API-Friendly • Modern Architecture • Data-Secured
-        </footer>
-        
     </div>
+
+    <footer class="mt-16 flex flex-col items-center gap-6">
+        <div class="opacity-30 text-[10px] tracking-[0.2em] uppercase">
+            [Launching Soon] API-Friendly • Modern Architecture • Data-Secured
+        </div>
+        <img src="favicon.ico" alt="DFWSA Badge" class="w-12 h-12 opacity-80 grayscale hover:grayscale-0 transition-all brightness-150">
+    </footer>
 </body>
 </html>
