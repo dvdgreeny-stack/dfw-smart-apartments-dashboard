@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DFWSA | Smart Apartment Ecosystem</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @font-face {
             font-family: 'Century Gothic';
             src: local('Century Gothic'), local('CenturyGothic');
         }
+        body { font-family: 'Century Gothic', sans-serif; }
     </style>
 </head>
-<body class="platinum-portal">
-    <div class="container">
-        <header>
-            <p class="tagline">Smart Amenity System • Vendor Ecosystem • Resident Engagement</p>
-            <hr class="glow-line">
-            <h1>Service is Happening.</h1>
+<body class="bg-[#0a0a0a] text-[#e5e5e5] min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-6xl w-full text-center">
+        
+        <header class="mb-16">
+            <p class="text-[#c5a367] tracking-[0.3em] uppercase text-xs font-bold mb-4">
+                Smart Amenity System • Vendor Ecosystem • Resident Engagement
+            </p>
+            <div class="h-[1px] w-1/3 mx-auto bg-gradient-to-r from-transparent via-[#c5a367] to-transparent opacity-60 mb-8"></div>
+            <h1 class="text-5xl md:text-6xl font-light text-white tracking-tight">Service is Happening.</h1>
         </header>
 
-        <section class="grid">
-            <div class="card shadow-glow">
-                <h2>1. Strategic Asset Refresh</h2>
-                <p>Our proprietary <strong>"Soft Bid"</strong> flow automates the journey from inspection to restoration. We provide Asset Managers with a seamless, tactical engine for make-readies, repairs, and renovations with institutional ease of use.</p>
+        <section class="grid md:grid-cols-3 gap-8 text-left">
+            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)]">
+                <h2 class="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4">1. Strategic Asset Refresh</h2>
+                <p class="text-sm leading-relaxed text-gray-400">Our proprietary <span class="text-white italic">"Soft Bid"</span> flow automates the journey from inspection to restoration. We provide Asset Managers with a seamless, tactical engine for make-readies, repairs, and renovations with institutional ease of use.</p>
             </div>
 
-            <div class="card shadow-glow">
-                <h2>2. Inclusive Communities</h2>
-                <p><strong>Turning Strangers into Neighbors.</strong> We build brand cheerleaders through a hybrid engagement model delivered virtually, in the clubhouse, or off-site. By connecting residents through sports, arts, and entertainment, we transform isolated renters into a vibrant, loyal community.</p>
+            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)]">
+                <h2 class="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4">2. Inclusive Communities</h2>
+                <p class="text-sm leading-relaxed text-gray-400"><span class="text-white">Turning Strangers into Neighbors.</span> We build brand cheerleaders through a hybrid engagement model delivered virtually, in the clubhouse, or off-site. Connecting residents through sports, arts, and entertainment.</p>
             </div>
 
-            <div class="card shadow-glow">
-                <h2>3. Collective Impact Initiatives</h2>
-                <p><strong>Growth through Symbiosis.</strong> Retention is rooted in respect. When residents, vendors, and management unite for local service projects, it creates a symbiotic cycle of community awareness and growth that defines the nurturing property standard.</p>
+            <div class="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)]">
+                <h2 class="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4">3. Collective Impact</h2>
+                <p class="text-sm leading-relaxed text-gray-400"><span class="text-white">Growth through Symbiosis.</span> Retention is rooted in respect. When residents, vendors, and management unite for local service projects, it creates a symbiotic cycle of community awareness and growth.</p>
             </div>
         </section>
 
-        <footer>
-            <p>[Launching Soon] API-Friendly • Modern Architecture • Data-Secured</p>
+        <footer class="mt-24 opacity-30 text-[10px] tracking-[0.2em] uppercase">
+            [Launching Soon] API-Friendly • Modern Architecture • Data-Secured
         </footer>
+        
     </div>
 </body>
 </html>
