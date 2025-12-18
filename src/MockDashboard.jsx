@@ -1,35 +1,67 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
-import { motion, AnimatePresence } from "framer-motion";
+import React from 'react';
 
+// The Platinum Portal: Professional, Platinum, Champagne, Glowing
 export default function MockDashboard() {
-  const takeoffData = [
-    { week: "Oct 14", takeoffs: 18 },
-    { week: "Oct 21", takeoffs: 26 },
-    { week: "Oct 28", takeoffs: 33 },
-    { week: "Nov 4", takeoffs: 45 },
-  ];
-
-  const tradeVolume = [
-    { trade: "Paint", qty: 1250 },
-    { trade: "Flooring", qty: 960 },
-    { trade: "Cabinetry", qty: 780 },
-    { trade: "Countertops", qty: 610 },
-    { trade: "Roofing", qty: 300 },
-  ];
-
-  const projectPerformance = [
-    { project: "CushWake - Stonebridge", budget: 120000, actual: 128000 },
-    { project: "Willow Bridge - Briscoe", budget: 87000, actual: 84500 },
-    { project: "Jes Stone - Vendor Ops", budget: 56000, actual: 57500 },
-  ];
-
   return (
-    <div className="bg-[#0F0F0F] min-h-screen text-gray-100 font-[Century-Gothic] overflow-x-hidden relative">
-      <h1 className="text-4xl font-semibold text-center text-pink-300 mb-6">
-        DFW Smart Apartments — Field Operations Overview
-      </h1>
-      {/* KPI, Charts, and Placeholder sections */}
+    <div className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex items-center justify-center p-6 overflow-hidden" 
+         style={{ fontFamily: "'Century Gothic', sans-serif" }}>
+      
+      <div className="max-w-6xl w-full text-center">
+        
+        {/* Header Section */}
+        <header className="mb-16">
+          <p className="text-[#c5a367] tracking-[0.3em] uppercase text-xs font-bold mb-4">
+            Smart Amenity System • Vendor Ecosystem • Resident Engagement
+          </p>
+          <div className="h-[1px] w-1/3 mx-auto bg-gradient-to-r from-transparent via-[#c5a367] to-transparent opacity-60 mb-8" />
+          <h1 className="text-5xl md:text-6xl font-light text-white tracking-tight shadow-sm">
+            Service is Happening.
+          </h1>
+        </header>
+
+        {/* The 3 Pillars - Glowing Shadow Boxes */}
+        <div className="grid md:grid-cols-3 gap-8 text-left">
+          
+          {/* Pillar 1: Strategic Asset Refresh (The Wolf Pack Engine) */}
+          <div className="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.7),0_0_25px_rgba(197,163,103,0.15)] transition-all duration-500 group">
+            <h2 className="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4 group-hover:text-white transition-colors">
+              1. Strategic Asset Refresh
+            </h2>
+            <p className="text-sm leading-relaxed text-gray-400">
+              Our proprietary <strong className="text-white italic">"Soft Bid"</strong> flow automates the journey from inspection to restoration. We provide Asset Managers with a seamless, tactical engine for make-readies, repairs, and renovations with institutional ease of use.
+            </p>
+          </div>
+
+          {/* Pillar 2: Inclusive Communities */}
+          <div className="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.7),0_0_25px_rgba(197,163,103,0.15)] transition-all duration-500 group">
+            <h2 className="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4 group-hover:text-white transition-colors">
+              2. Inclusive Communities
+            </h2>
+            <p className="text-sm leading-relaxed text-gray-400">
+              <strong className="text-white">Turning Strangers into Neighbors.</strong> We build brand cheerleaders through a hybrid engagement model delivered virtually, in the clubhouse, or off-site. By connecting residents through sports, arts, and entertainment, we transform isolated renters into a vibrant, loyal community.
+            </p>
+          </div>
+
+          {/* Pillar 3: Collective Impact */}
+          <div className="bg-[#1a1a1a]/40 border border-[#c5a367]/20 p-8 rounded-2xl backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_15px_rgba(197,163,103,0.05)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.7),0_0_25px_rgba(197,163,103,0.15)] transition-all duration-500 group">
+            <h2 className="text-[#c5a367] text-lg font-bold uppercase tracking-widest mb-4 group-hover:text-white transition-colors">
+              3. Collective Impact Initiatives
+            </h2>
+            <p className="text-sm leading-relaxed text-gray-400">
+              <strong className="text-white">Growth through Symbiosis.</strong> Retention is rooted in respect. When residents, vendors, and management unite for local service projects, it creates a symbiotic cycle of community awareness and growth that defines the nurturing property standard.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Footer */}
+        <footer className="mt-24 opacity-30">
+          <p className="text-[10px] tracking-[0.2em] uppercase">
+            [Launching Soon] API-Friendly • Modern Architecture • Data-Secured
+          </p>
+        </footer>
+        
+      </div>
     </div>
   );
 }
