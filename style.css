@@ -1,25 +1,28 @@
+/* DFWSA Platinum Portal CSS */
 body.platinum-portal {
-    background-color: #0a0a0a;
-    color: #e5e5e5;
-    font-family: 'Century Gothic', sans-serif;
+    background-color: #0a0a0a; /* Deep Obsidian */
+    color: #e5e5e5; /* Platinum */
+    font-family: 'Century Gothic', 'AppleGothic', 'Futura', sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1100px;
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
 }
 
+/* Header Section */
 .tagline {
     color: #c5a367; /* Champagne Gold */
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     margin-bottom: 20px;
 }
 
@@ -27,50 +30,70 @@ body.platinum-portal {
     border: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, #c5a367, transparent);
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
+    width: 60%;
+    opacity: 0.6;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
+    color: #ffffff;
     margin-bottom: 60px;
+    letter-spacing: -0.02em;
 }
 
+/* Grid & Portal Cards */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
 .card {
-    background: rgba(26, 26, 26, 0.5);
+    background: rgba(26, 26, 26, 0.4);
     border: 1px solid rgba(197, 163, 103, 0.2);
-    padding: 30px;
+    padding: 40px;
     border-radius: 12px;
     backdrop-filter: blur(10px);
-    transition: transform 0.3s ease;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
 }
 
+/* The Glowing Shadow Box Logic */
 .shadow-glow {
-    box-shadow: 0 0 20px rgba(197, 163, 103, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(197, 163, 103, 0.03);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(197, 163, 103, 0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(197, 163, 103, 0.2);
 }
 
 .card h2 {
     color: #c5a367;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .card p {
     font-size: 0.9rem;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #b0b0b0;
 }
 
+/* Institutional Footer */
 footer {
-    margin-top: 80px;
-    opacity: 0.5;
+    margin-top: 100px;
+    opacity: 0.4;
     font-size: 0.7rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+strong {
+    color: #ffffff;
 }
